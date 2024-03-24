@@ -29,7 +29,7 @@ const BrowseTrailer = () => {
         title="YouTube video player" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowFullScreen></iframe> 
-        <div className="absolute top-0 pl-20 pt-36">
+        <div className="absolute top-0 pl-6 md:pl-20 md:pt-36 pt-[12rem]">
         <p className="text-white text-2xl font-bold italic my-2">{select?.original_title}</p>
         <p className="text-white w-80 text-lg my-2">{about}</p>
         <div className="flex mt-4">

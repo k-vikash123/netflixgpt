@@ -32,7 +32,7 @@ const Header = () => {
       }, []);
 
     return (<div className="absolute w-[100%] bg-gradient-to-b from-black">
-        <img src={logo} alt="logo" className="w-52 h-24 ml-20 mt-5 self-center"></img>
+        <img src={logo} alt="logo" className="w-52 h-24 mx-auto md:ml-20 mt-5 self-center"></img>
     </div> )
 }  
 

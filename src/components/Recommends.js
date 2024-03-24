@@ -13,7 +13,7 @@ const Recommends = () => {
 
      return movieList?.length === 0 ? null : (
         <div className="bg-black">
-    <div className="relative -mt-28 z-4 ">
+    <div className="relative mt-72 md:-mt-28">
        <h1 className="font-bold text-lg m-2 text-white">Now Playing</h1>
        <div className="flex overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
        {movieList?.map((movie) => {

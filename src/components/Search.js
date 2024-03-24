@@ -26,13 +26,13 @@ const Search = () => {
         dispatch(addSearch(filteredFilm))
     }
 
-    return <div>
-         <img src={bgImage} alt="background" className="fixed -z-10"></img>
-         <div className="absolute top-[26%] left-[24%] grid grid-cols-12 rounded-md bg-black">
-            <input type="text" ref={movieName} placeholder={lang[language].searchPlace} className="m-3 w-[29rem] h-10 px-2 rounded-md outline-none col-span-9"></input>
+    return <div className="overflow-y-scroll">
+         <img src={bgImage} alt="background" className="md:fixed md:w-screen fixed h-screen object-cover -z-10"></img>
+         <div className="absolute top-[26%] mx-auto  left-4 md:left-[24%] grid grid-cols-12 rounded-md bg-black">
+            <input type="text" ref={movieName} placeholder={lang[language].searchPlace} className="m-3  md:w-[29rem] w-[16rem] h-10 px-2 rounded-md outline-none col-span-9"></input>
             <button className="m-3 text-lg bg-red-600 text-white rounded-md col-span-3" onClick={searchMovie}>{lang[language].search}</button>
          </div>
-         {select?.length && <div className="absolute top-[40%] left-[24%] w-6/12 h-6/12 p-3 rounded-md bg-black m-4 mx-auto">
+         {select?.length && <div className="absolute top-[40%] md:left-[24%] md:w-6/12 h-6/12 p-3 rounded-md bg-black m-4 mx-auto">
            {select?.map((film) => {
               return  <DisplaySearchResult key={film?.id} fData={film}/>
            })}

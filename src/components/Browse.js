@@ -33,9 +33,9 @@ const Browse = () => {
         }
     }
 
-    return <div>
+    return <div className="bg-black md:bg-none">
         <Header/>
-        <div className="flex flex-row absolute top-10 left-[70%]">
+        <div className="flex flex-row absolute top-[8rem] left-8 z-4 md:top-10 md:left-[70%] z-10">
             <button className="px-2 rounded-md mr-3 relative bottom-1 bg-purple-600 text-white" onClick={searching}>{itemShown}</button>
             <img src={select?.photoURL} alt="userPhoto" className="w-12 h-12 rounded-full relative bottom-2"></img>
             <p className="font-bold text-lg mx-1 text-white">{select?.displayName}</p>

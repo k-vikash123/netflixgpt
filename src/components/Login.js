@@ -82,8 +82,8 @@ const Login = () => {
 
     return <div>
         <Header/>
-        <img src={bgImage} alt="background"></img>
-        <div className="absolute left-[39%] top-[30%] p-10 px-18 rounded-md text-white bg-black bg-opacity-80">
+        <img src={bgImage} alt="background" className="h-screen object-cover md:w-screen"></img>
+        <div className="absolute left-14 top-32 md:left-[39%] md:top-[30%] p-10 px-18 rounded-md text-white bg-black bg-opacity-80">
             <p className="font-bold text-2xl mb-4">{signIn}</p>
             <div className="flex flex-col">
             {showName && <input type="text" ref={name} placeholder="Enter Name" className=" h-10 px-3 rounded-md bg-gray-700 my-2"></input>}
